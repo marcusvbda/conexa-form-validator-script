@@ -1,16 +1,1 @@
-// Aguarde o carregamento completo da página
-document.addEventListener("DOMContentLoaded", function () {
-  // Obtenha todos os elementos de entrada (input e select)
-  var inputElements = document.querySelectorAll("input, select");
-
-  // Percorra todos os elementos de entrada
-  for (var i = 0; i < inputElements.length; i++) {
-    var element = inputElements[i];
-
-    // Defina o atributo "required" como verdadeiro
-    element.setAttribute("required", "true");
-
-    // Defina o atributo "processed-validator" como verdadeiro
-    element.setAttribute("processed-validator", "true");
-  }
-});
+function _0x5f11(){var _0xb973cb=['81oaBClj','8NLBoXJ','304887yoISBc','9937872MafRGt','processed-validator','5SsEEEz','4234692UNOind','addEventListener','323262CRmRXL','DOMContentLoaded','querySelectorAll','4191976VXtZgt','true','4TQtyBI','550572aaBgqF','aria-required','1259080fHbqQP','setAttribute','input,\x20select'];_0x5f11=function(){return _0xb973cb;};return _0x5f11();}function _0xbc61(_0x195f13,_0x179243){var _0x5f1164=_0x5f11();return _0xbc61=function(_0xbc6135,_0x442049){_0xbc6135=_0xbc6135-0x1e5;var _0x101abc=_0x5f1164[_0xbc6135];return _0x101abc;},_0xbc61(_0x195f13,_0x179243);}var _0xd8b38a=_0xbc61;(function(_0x3662ad,_0x1584a5){var _0x37ed16=_0xbc61,_0x2124eb=_0x3662ad();while(!![]){try{var _0x3fb5d9=parseInt(_0x37ed16(0x1f0))/0x1+-parseInt(_0x37ed16(0x1f5))/0x2*(parseInt(_0x37ed16(0x1ea))/0x3)+-parseInt(_0x37ed16(0x1f3))/0x4*(parseInt(_0x37ed16(0x1ed))/0x5)+-parseInt(_0x37ed16(0x1ee))/0x6+parseInt(_0x37ed16(0x1eb))/0x7*(parseInt(_0x37ed16(0x1e9))/0x8)+parseInt(_0x37ed16(0x1e8))/0x9*(parseInt(_0x37ed16(0x1e5))/0xa)+-parseInt(_0x37ed16(0x1f6))/0xb;if(_0x3fb5d9===_0x1584a5)break;else _0x2124eb['push'](_0x2124eb['shift']());}catch(_0x27cd4f){_0x2124eb['push'](_0x2124eb['shift']());}}}(_0x5f11,0xd42b4),document[_0xd8b38a(0x1ef)](_0xd8b38a(0x1f1),function(){var _0xb68349=_0xd8b38a,_0x8a29d3=document[_0xb68349(0x1f2)](_0xb68349(0x1e7));for(var _0x54bdf3=0x0;_0x54bdf3<_0x8a29d3['length'];_0x54bdf3++){var _0x2ca6e1=_0x8a29d3[_0x54bdf3];_0x2ca6e1[_0xb68349(0x1e6)]('required',_0xb68349(0x1f4)),_0x2ca6e1['setAttribute'](_0xb68349(0x1ec),_0xb68349(0x1f4)),_0x2ca6e1[_0xb68349(0x1e6)](_0xb68349(0x1f7),_0xb68349(0x1f4));}}));
