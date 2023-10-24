@@ -1,29 +1,14 @@
-window.validateForm = (event) => {
-const hasErrors = (field) => {
-    const value = field.value;
-    const name = field.name;
-    if (!value) true;
-    return false;
-}
-
-    event.preventDefault();
-    const form = event.target;
-    const fields = form.querySelectorAll('input');
-    let errors = [];
-    fields.forEach((field) => {
-		console.log(field);
-        const fieldError = hasErrors(field);
-        if (fieldError) {
-            errors.push(field);        }
-    });
-//     if (errors.length === 0) {
-//         form.submit();
-//     } else {
-        alert("Por favor preencha o formulário corretamente");
-//     }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-	console.log("Init form validator");
-    document.addEventListener("submit", window.validateForm);
+// Aguarde o carregamento completo da página
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("INIT force-input-required.js")
+  var forms = document.getElementsByTagName("form");
+  for (var i = 0; i < forms.length; i++) {
+    var form = forms[i];
+    var inputs = form.getElementsByTagName("input");
+    for (var j = 0; j < inputs.length; j++) {
+      var input = inputs[j];
+      console.log("inpt", input);
+      input.setAttribute("required", "true");
+    }
+  }
 });
