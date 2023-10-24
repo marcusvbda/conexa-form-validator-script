@@ -12,7 +12,7 @@ window.validateForm = (event) => {
     let errors = [];
     fields.forEach((field) => {
 		console.log(field);
-        const fieldError = hasErrors(field);
+        const fieldError = window.hasErrors(field);
         if (fieldError) {
             errors.push(field);
         }
@@ -26,5 +26,5 @@ window.validateForm = (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	console.log("Init form validator");
-    document.addEventListener("submit", validateForm);
+    document.addEventListener("submit", window.validateForm);
 });
