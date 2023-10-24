@@ -1,21 +1,20 @@
-window.hasErrors = (field) => {
+window.validateForm = (event) => {
+const hasErrors = (field) => {
     const value = field.value;
     const name = field.name;
     if (!value) true;
     return false;
 }
 
-window.validateForm = (event) => {
     event.preventDefault();
     const form = event.target;
     const fields = form.querySelectorAll('input');
     let errors = [];
     fields.forEach((field) => {
 		console.log(field);
-        const fieldError = window.hasErrors(field);
+        const fieldError = hasErrors(field);
         if (fieldError) {
-            errors.push(field);
-        }
+            errors.push(field);        }
     });
 //     if (errors.length === 0) {
 //         form.submit();
