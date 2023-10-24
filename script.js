@@ -1,4 +1,4 @@
-window.hasErros = (field) => {
+window.hasErrors = (field) => {
     const value = field.value;
     const name = field.name;
     if (!value) true;
