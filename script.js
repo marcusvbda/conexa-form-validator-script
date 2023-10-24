@@ -1,11 +1,11 @@
-const hasErros = (field) => {
+window.hasErros = (field) => {
     const value = field.value;
     const name = field.name;
     if (!value) true;
     return false;
 }
 
-const validateForm = (event) => {
+window.validateForm = (event) => {
     event.preventDefault();
     const form = event.target;
     const fields = form.querySelectorAll('input');
