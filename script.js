@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var forms = document.getElementsByTagName("form");
     console.log("forms", forms);
     for (var i = 0; i < forms.length; i++) {
-        var form = forms[i];
-        var inputs = form.getElementsByTagName("input");
-        console.log("inputs", forms);
-        for (var j = 0; j < inputs.length; j++) {
+      var form = forms[i];
+      var inputs = form.getElementsByTagName("input");
+      console.log("inputs", forms);
+      for (var j = 0; j < inputs.length; j++) {
         var input = inputs[j];
         console.log("inpt", input);
         input.setAttribute("required", "true");
-        }
+      }
     }
-  },2000);
+  }, 5000);
 });
