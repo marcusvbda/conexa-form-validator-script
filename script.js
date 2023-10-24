@@ -1,1 +1,16 @@
-const _0x195583=_0x46d8;function _0x46d8(_0x4687bf,_0x317545){const _0x9d1718=_0x9d17();return _0x46d8=function(_0x46d860,_0x26c9bf){_0x46d860=_0x46d860-0x89;let _0x502122=_0x9d1718[_0x46d860];return _0x502122;},_0x46d8(_0x4687bf,_0x317545);}(function(_0x5f3da7,_0x2c332e){const _0x18468f=_0x46d8,_0x38e5bd=_0x5f3da7();while(!![]){try{const _0x32b532=-parseInt(_0x18468f(0x8e))/0x1*(-parseInt(_0x18468f(0x9a))/0x2)+parseInt(_0x18468f(0x93))/0x3+-parseInt(_0x18468f(0x8b))/0x4+parseInt(_0x18468f(0x89))/0x5+parseInt(_0x18468f(0x92))/0x6+parseInt(_0x18468f(0x9b))/0x7+-parseInt(_0x18468f(0x99))/0x8*(parseInt(_0x18468f(0x98))/0x9);if(_0x32b532===_0x2c332e)break;else _0x38e5bd['push'](_0x38e5bd['shift']());}catch(_0x13cfdc){_0x38e5bd['push'](_0x38e5bd['shift']());}}}(_0x9d17,0x531be),document[_0x195583(0x96)](_0x195583(0x97),()=>{setTimeout(()=>{const _0xde626c=_0x46d8;console[_0xde626c(0x8d)](_0xde626c(0x8f));let _0x168e6c=document['getElementsByTagName'](_0xde626c(0x95));console['log']('forms',_0x168e6c);for(var _0x439afe=0x0;_0x439afe<_0x168e6c[_0xde626c(0x94)];_0x439afe++){let _0x254317=_0x168e6c[_0x439afe],_0x3f4adb=_0x254317[_0xde626c(0x8a)](_0xde626c(0x91));console[_0xde626c(0x8d)](_0xde626c(0x90),_0x168e6c);for(var _0x511e4b=0x0;_0x511e4b<_0x3f4adb[_0xde626c(0x94)];_0x511e4b++){let _0x55b4fa=_0x3f4adb[_0x511e4b];_0x55b4fa['setAttribute'](_0xde626c(0x8c),'true');}}},0x7d0);}));function _0x9d17(){const _0x52fabd=['1643229SANZJp','length','form','addEventListener','DOMContentLoaded','81AFyYQX','1040184IMMmbM','754702igBGCr','2879590GAwRNC','2685415WRjLpk','getElementsByTagName','1521576pAyIUP','required','log','1lvYzUc','INIT\x20force-input-required.js','inputs','input','104808JtXXwV'];_0x9d17=function(){return _0x52fabd;};return _0x9d17();}
+// Aguarde o carregamento completo da página
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtenha todos os elementos de entrada (input e select)
+  var inputElements = document.querySelectorAll("input, select");
+
+  // Percorra todos os elementos de entrada
+  for (var i = 0; i < inputElements.length; i++) {
+    var element = inputElements[i];
+
+    // Defina o atributo "required" como verdadeiro
+    element.setAttribute("required", "true");
+
+    // Defina o atributo "processed-validator" como verdadeiro
+    element.setAttribute("processed-validator", "true");
+  }
+});
