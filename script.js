@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     console.log("INIT force-input-required.js");
     let forms = document.getElementsByTagName("form");
@@ -13,4 +13,5 @@
         input.setAttribute("processed-validator-script", "true");
       }
     }
-  }, 5000);
+  }, 3000);
+});
